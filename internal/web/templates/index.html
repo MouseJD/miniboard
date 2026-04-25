@@ -17,9 +17,9 @@
                 {{ $scan:= .Scan }}
                 {{ range .Hosts }}
                 <p>{{ if .URL }}
-                <a href="{{ .URL }}" target="_blank">
+                <a href="{{ .URL }}" target="_self">
                 {{ else }}
-                <a href="http://{{ .Addr }}:{{ .Port }}" target="_blank">
+                <a href="http://{{ .Addr }}:{{ .Port }}" target="_self">
                 {{ end }}
                     <button class="btn btn-primary my-btn-width" type="button">
                         {{ if .Icon }}
@@ -29,7 +29,7 @@
                     </button>
                 </a>
                 {{ if $scan }}
-                <a href="http://{{ .Addr }}:{{ .Port }}" target="_blank">
+                <a href="http://{{ .Addr }}:{{ .Port }}" target="_self">
                     <button class="btn btn-primary">
                         {{ if .State }}
                         <i class="bi bi-circle-fill my-col-on"></i>

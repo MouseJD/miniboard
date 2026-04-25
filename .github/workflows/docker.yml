@@ -23,4 +23,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/miniboard:latest
+          tags: ghcr.io/mousejd/miniboard:latest
